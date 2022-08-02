@@ -35,6 +35,7 @@ namespace TrackerUI
             this.loadExistingTournamentLbl = new System.Windows.Forms.Label();
             this.loadTournamentBtn = new System.Windows.Forms.Button();
             this.createTournamentBtn = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // headerlbl
@@ -97,12 +98,25 @@ namespace TrackerUI
             this.createTournamentBtn.Text = "Create Tournament";
             this.createTournamentBtn.UseVisualStyleBackColor = true;
             // 
-            // TorunamentDashboardForm
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(153)))), ((int)(((byte)(255)))));
+            this.label1.Location = new System.Drawing.Point(350, 109);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(163, 45);
+            this.label1.TabIndex = 27;
+            this.label1.Text = "Welcome!";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TournamentDashboardForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(15F, 37F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(855, 564);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.createTournamentBtn);
             this.Controls.Add(this.loadTournamentBtn);
             this.Controls.Add(this.loadExistingTournamentDropDown);
@@ -111,7 +125,7 @@ namespace TrackerUI
             this.Font = new System.Drawing.Font("Segoe UI", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(6, 7, 6, 7);
-            this.Name = "TorunamentDashboardForm";
+            this.Name = "TournamentDashboardForm";
             this.Text = "Torunament Dashboard";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -125,5 +139,6 @@ namespace TrackerUI
         private System.Windows.Forms.Label loadExistingTournamentLbl;
         private System.Windows.Forms.Button loadTournamentBtn;
         private System.Windows.Forms.Button createTournamentBtn;
+        private System.Windows.Forms.Label label1;
     }
 }
